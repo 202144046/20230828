@@ -1,5 +1,4 @@
 
-
 age= int(input("올해 나이 : "))
 print("내년 나이 : " + str(age + 1))
 
