@@ -9,6 +9,10 @@ import (
 
 func main() {
 
+	// koreanzombie := "정찬성" // 문법적으로는 문제없지만 커뮤니티 관례를 따르자.
+	KoreanZombie := "정찬성"
+	fmt.Println(KoreanZombie)
+
 	// var 7c string 변수명은 알파벳 대소문자로 시작해야 한다.(숫자 안됨)
 
 	// var G string	 외부로 노출되어야하는 변수명은 대문자로 시작해야 한다.
@@ -33,6 +37,9 @@ func main() {
 	// b := 8.34 // float64
 	var b float32 = 8.34
 	fmt.Println(b, reflect.TypeOf(b))
+
+	fmt.Println(a * int(b))
+	fmt.Println(float32(a) > b)
 
 	fmt.Println('Z', '2', '\n', '김', '인', '하') // rune literals(int 32) 0, 5, 100, 465
 	fmt.Println(reflect.TypeOf('Z'), reflect.TypeOf('2'), reflect.TypeOf("Hi"), reflect.TypeOf(4.99), reflect.TypeOf(false))
