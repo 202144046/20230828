@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"strings"
 )
 
 func main() {
@@ -20,10 +21,16 @@ func main() {
 		log.Fatal(err)
 	}
 
-	if insputScore >= 90 {
-		grade := "A grade!"
+	inputScoreString = strings.TrimSpace(inputScoreString)
+	inputScore, err := strings.ParseFloat(inputScoreString, 32)
+	var grade string
+
+	if inputScore >= 90 {
+		grade = "A grade!"
+		// fmt.Println("You got", grade)
+	} else {
+		grade = "under A grade..."
+		// fmt.Println("You got", grade)
 	}
-	else {
-		grade := "under A grade..."
-	}
+
 }
