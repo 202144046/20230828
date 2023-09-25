@@ -14,6 +14,9 @@ func main() {
 	// inputScore, err := reader.ReadString('\n') 	// err declared and not used
 	// inputScore, _ := reader.ReadString('\n') 	// option 1
 	inputScore, err := reader.ReadString('\n') // option 2
-	log.Fatal(err)                             // 프로그램 종료 (에러 감지 후 리포팅 하기 위해 사용)
+	// log.Fatal(err)                             // 프로그램 종료 (에러 감지 후 리포팅 하기 위해 사용)
+	if err != nil {
+		log.Fatal(err)
+	}
 	fmt.Println(inputScore)
 }
