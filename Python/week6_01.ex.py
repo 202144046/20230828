@@ -32,3 +32,37 @@ intro = f"이름:{name} 나이:{age+1}"
 print(intro)
 print(end="\n\n\n")
 
+
+
+
+
+strip
+
+upper
+lower
+
+in 연산자
+
+"#" 스플릿 파일처리 할 때 중요
+
+| 파이프 쪼개지는 갯수 => split은 무조건 리스트로 쪼개짐 즉 [] 대괄호 안에 있음.
+
+datetime now
+
+sort => 오름차순, 기본값은 sort(reversed=False)
+sort(reversed=True) => 내림차순(큰 수부터)
+
+# p.207
+
+test_list = [1, 2, 3, 20, 22]
+
+# 향상된 for문, foreach문 = for-in문
+
+for element in test_list:
+    print(element)
+
+for element in "컴퓨터정보과":
+    print(element)
+
+딕셔너리 공부하기
+
