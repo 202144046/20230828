@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    const max = function (first, ...rests) {
+      let output
+      let items
+
+      if (Array.isArray(first)) {
+        output = first[0]
+        items = first
+      } else if(typeof(first) === 'number') {
+        output = first
+        items = rests
+      }
+      for (const data of items) {
+        if (output<data) {
+          output = data
+        }
+      }
+      return output
+    }
+    console.log(`max(배열):${max([1, 2, 3, 4])}`)
+    console.log(`max(숫자,...):${max(1, 2, 3, 4)}`)
+  </script>
+
+</head>
+<body>
+  
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+
+    const max = function (first, ...rests) { //전개연산자
+      let output;
+      let items;
+
+      if (Array.isArray(first)) { // first가 배열인지 확인
+        output = first[0]; // first 0번째 요소를 output에 할당
+        items = first; // first전체 items에
+      }
+      else if (typeof (first) === "number") { // 숫자인지 확인
+        output = first; // 첫번쨰 숫자 할당
+        items = rests; // 나머지 숫자 할당
+      }
+
+      for (const data of items) {
+        if (output < data) {
+          output = data;
+        }
+      }
+      return output;
+    }
+
+    console.log(`max(배열) : ${max([1, 2, 3, 4])}`);
+    console.log(`max(숫자, ...) : ${max(1, 2, 3, 4)}`);
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
