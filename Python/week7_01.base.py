@@ -75,4 +75,27 @@ student_scores={"김인하":92, "이인하":85, "박인하":78}
 avg_score = calculate_average_from_dict(student_scores)
 print(f"평균 점수 : {avg_score:.2f}")
 
+print("\n")
+
+def remove_value(src_cplist, target):
+    src_list = src_cplist[:]
+    while target in src_list:
+        src_list.remove(target)
+        return src_list
+    
+def remove_value(src_cplist, target):
+    return [i for i in src_cplist if target != i]
+
+numbers=[1,2,3,2,4,2,5]
+value_remove = 2
+new_numbers = remove_value(numbers, value_remove)
+print(numbers, new_numbers)
+
+print("\n")
+
+# 딕셔너리를 하나 미리 만들어 두기
+
+# d[1] = 1
+# d[2] = 1
+# d[3] = 1
 
