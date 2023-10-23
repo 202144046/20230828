@@ -2,13 +2,12 @@ package main
 
 import "fmt"
 
-func main() {
-	a := 10 // var a int = 10
-	var pa *int
-	pa = &a
+func double(n *int) {
+	*n = *n * 2
+}
 
-	fmt.Println(a, *pa)
-	fmt.Println(&a, pa)
-	fmt.Println("%T %T %T %T\n", a, *pa, &a, pa)
-	fmt.Println(&pa)
+func main() {
+	var a int = 5
+	double(&a) // pass by pointer
+	fmt.Printf("%d\n", a)
 }
