@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        ul li:nth-child(odd) {
+            background-color: yellow;
+        }
+    </style> -->
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const lists = document.querySelectorAll("li");
+        lists.forEach(function(list, index) {
+            if(index%2==0) {
+            list.style.backgroundColor="yellow";}
+        })
+    })
+</script>
+<body>
+    <h3>가보고 싶은 나라는?</h3>
+    <ul>
+        <li>미쿡</li>
+        <li>한쿡</li>
+        <li>중쿡</li>
+        <li>태쿡</li>
+        <li>영쿡</li>
+        <li>팀쿡</li>
+    </ul>
+</body>
+</html>

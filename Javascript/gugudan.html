@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function twoDigits(num) {
+        return num < 10 ? `0${num}` : num;
+
+    }
+
+
+    for (let i = 2; i<=9; i+=2) {
+        for (let j = 1; j <= 9; j++) {
+            document.write(`${1} * ${j} = ${twoDigits(i * j)}&nbsp;&nbsp;&nbsp;&nbsp;`);
+            document.write(`${i+1} * ${j} = ${(twoDigits(i+1) * j)} <br>`);
+        }
+        document.write("-----------------<br>");
+    }
+</script>
+<body>
+    
+</body>
+</html>

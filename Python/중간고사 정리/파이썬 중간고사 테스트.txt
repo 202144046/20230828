@@ -1,0 +1,129 @@
+1.
+print("안녕하세요")
+
+2.
+print("안녕하세요")
+print("안녕하세요")
+print("안녕하세요")
+
+3.
+print("안녕하세요"\n * 3)
+
+4.
+i = 0
+while i < 3:
+    print("안녕하세요")
+    i++
+
+5.
+for i range(3):
+    print("안녕하세요")
+
+6.
+def hello():
+    print("안녕하세요")
+
+7.
+hello(); hello(); hello()
+
+hello()
+hello()
+hello()
+
+8.
+i = 0
+while i < 3:
+    hello()
+    i++
+
+9.
+for i in range(3):
+    hello()
+
+10.
+def hello(n):
+    print("안녕하세요\n" * n)
+
+11.
+def hello(n):
+    i = 0
+    while i < n:
+        print("안녕하세요")
+        i++
+
+12.
+def hello(n):
+    for i in range(n):
+        print("안녕하세요")
+
+13.
+def add(n1, n2):
+    return n1 + n2
+
+14.
+def sub(n1, n2):
+    return n1 - n2
+
+15.
+def mul(n1, n2):
+    return n1 * n2
+
+16.
+def div(n1, n2):
+    if n2 != 0
+        return n1 / n2
+    else: (생략해도 파이썬은 기본적으로 None을 반환함)
+        return None
+
+17.
+def hello(data, n):
+    for i in range(n):
+        print(data)
+
+18.
+def list_sum(data):
+    return sum(data)
+
+19.
+def list_avg(data):
+    return sum(data) / len(data)
+
+20.
+def remove_value(target, remove_value):
+    result = target[:]
+    while remove_value in result:
+        result.remove(remove_value)
+    return result
+
+21.
+숙제
+
+22.
+숙제
+
+23.
+숙제
+
+24.
+def merge_list(list_1, list_2)
+    # result = list_1[:]
+    # for d in list_2:
+    #     if d not in result:
+    #         result.append(d)
+    result = [ d for d in list_2 if d not in list_1 ]
+    result.sort()
+    return result
+
+25.
+숙제
+
+26.
+숙제
+
+
+
+
+
+
+
+
