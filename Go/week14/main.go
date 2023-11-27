@@ -74,3 +74,4 @@ func main() {
 	status("강철")
 	status("성기훈")
 }
+
