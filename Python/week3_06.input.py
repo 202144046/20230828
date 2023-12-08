@@ -18,13 +18,16 @@ print("--------------------------------------------------------------")
 a = int(1)
 a = int("1")
 a = int(1.1)
+print(a)
 # a = int("1.1")
 # a = int("안녕")
 
 a = float(1)
 a = float("1")
 a = float(1.1)
-a = float("1.1")
+print(a)
+a = float("1.2")
+print(a)
 
 
 
